@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>其他静态方法</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $.trim();
+        //作用： 去除字符串两端的空格
+        //参数：需要去除空格的字符串
+        //返回指：去除空额之后的字符串
+
+        var str = "      inj     ";
+        var res = $.trim(str);
+        console.log("  ---     res   --- ");
+
+
+
+
+        var arr = [1, 3, 5, 7, 9]; //真数组
+        var arrlike = { //伪数组
+            0: 1,
+            1: 3,
+            2: 5,
+            3: 7,
+            4: 9,
+            length: 5
+        };
+        var obj = { //对象
+            "name": "inj",
+            age: "33"
+        };
+        var fn = function() {}; //函数
+        var w = window; //window
+
+        $.isWindow
+        判断传入的对象是window对象
+        返回指为false或true
+
+        var res = $.isArray(arr);
+        判断传入的对象是否是函数
+        返回值为false或true
+        //注意点： jQuery框架本质上是一个函数
+
+
+
+
+        var res = $.isFunction(jQuery)
+    </script>
+</body>
+
+</html>

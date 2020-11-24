@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(function() {
+
+            // addClass（）
+            // removeClass（）
+            // toggleClass（）
+            var btns = document.querySelector('button')
+            btns[0].onclick = function() {
+                $('div').addClass('class1')
+                    // 'class2'
+                    // 'class3')
+                    // 如果要添加多个用空格隔开
+            }
+            btns[1].onclick = function() {
+                $('div').removeClass('class')
+                    // 'class1'
+                    // 'class')
+            }
+            btns[2].onclick = function() {
+                // 有就删除 没就添加
+            }
+
+
+
+
+
+
+
+
+
+
+
+        })
+    </script>
+</head>
+
+<body>
+    <button>添加类</button>
+    <button>移除类</button>
+    <button>切换类</button>
+</body>
+
+</html>
